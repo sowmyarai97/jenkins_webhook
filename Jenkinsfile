@@ -37,7 +37,13 @@ pipeline {
                 echo "$GLOBAL_VAR"
                 echo "$defined_global_var"
             }
+        } 
+        stage('webhook testing') {
+            steps {
+                echo "$GLOBAL_VAR"
+                echo "$defined_global_var"
+            }
         }    
     }
 } 
-##testing
+
